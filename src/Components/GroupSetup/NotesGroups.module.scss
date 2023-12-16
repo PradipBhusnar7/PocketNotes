@@ -1,0 +1,95 @@
+.groupArea {
+    width: 25%;
+    height: 100%;
+    background-color: #FFF;
+    position: relative;
+
+    .heading {
+        height: 17%;
+        display: flex;
+        justify-content: center;
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            span {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+        }
+
+    }
+
+    .groupsContainer {
+        max-height: 83%;
+        overflow-y: auto;
+
+        > div {
+            padding-left: 1.5rem;
+
+            &:hover, &:active {
+                border-radius: 1rem;
+                background-color: rgba(97, 97, 97, 0.1)
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+    }
+    
+    .addGroupButton {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        background-color: var(--dark-blue);
+        font-size: 4rem;
+        font-weight: 500;
+        color: #FFF;
+        position: absolute;
+        right: 1.2rem;
+        bottom: 2rem;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.7rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0.3rem;
+        border: 2px solid transparent;
+        background-color: #FFF;
+        background-clip: content-box;
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 0.3rem;
+        background-color: #D9D9D9;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .groupArea {
+        width: 100vw;
+
+        .heading {
+            height: 15%;
+
+            div {
+
+                span {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+        .groupsContainer {
+            max-height: 85%;
+        }
+    }
+    
+}

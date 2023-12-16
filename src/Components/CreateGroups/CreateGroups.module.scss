@@ -1,0 +1,110 @@
+.createContainer {
+    box-sizing: border-box;
+    width: 30%;
+    min-height: 27%;
+    border-radius: 0.375rem;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 0 2%;
+    padding-right: 1%;
+    font-weight: 500;
+
+    h3 {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .groupInput {
+        display: flex;
+        height: 2rem;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+
+        label {
+            font-size: 1rem;
+        }
+
+        input {
+            width: 60%;
+            height: 90%;
+            border-radius: 1.2rem;
+            border: 2px solid #CCC;
+            background-color: #FFF;
+            padding-left: 1rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+
+            &::placeholder {
+                color: #979797;
+                font-weight: 400;
+            }
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9rem;
+            position: absolute;
+            bottom: -1.2rem;
+            right: 25%;
+            margin: 0;
+        }
+
+        .colorsList {
+            display: flex;
+            gap: 0.4rem;
+
+            .selected {
+                border: 2px solid black;
+            }
+
+            div {
+                width: 2rem;
+                height: 2rem;
+                border-radius: 100%;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    .createGroupButton {
+        width: 30%;
+        height: 1.8rem;
+        border-radius: 0.7rem;
+        background-color: var(--dark-blue);
+        color: #FFF;
+        font-weight: 400;
+        font-size: 1rem;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .createContainer {
+        width: 85%;
+        min-height: 35%;
+
+        .groupInput {
+            gap: 1rem;
+
+            .colorsList {
+                div {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                    box-sizing: border-box;
+                }
+                
+            }
+        }
+
+        .createGroupButton {
+            align-self: center;
+            width: 50%;
+            height: 2rem;
+        }
+    }
+}

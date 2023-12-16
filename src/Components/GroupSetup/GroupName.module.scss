@@ -1,0 +1,29 @@
+.groupsNameBox {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    .groupPlate {
+        width: 4rem;
+        height: 4rem;
+        color: #FFF;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .groupsNameBox {
+        font-size: 1.2rem;
+        gap: 1rem;
+
+        .groupPlate {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+}
